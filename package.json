@@ -1,0 +1,34 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "gulp+handlebars",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://daisuke240000neolab@bitbucket.org/daisuke240000neolab/frontend.git"
+  },
+  "keywords": [
+    "fuga"
+  ],
+  "author": "hoge",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/daisuke240000neolab/frontend#readme",
+  "devDependencies": {
+    "assemble": "^0.24.3",
+    "gulp": "^4.0.0",
+    "gulp-extname": "^0.2.2",
+    "gulp-handlebars": "^5.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-livereload": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-webserver": "^0.9.1",
+    "handlebars": "^4.1.0",
+    "path": "^0.12.7",
+    "require-dir": "^1.2.0"
+  }
+}
