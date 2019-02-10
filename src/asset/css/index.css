@@ -1,0 +1,548 @@
+
+/*全体ここから*/
+h1 {
+    height: 70px;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    font-size: 3.4rem;
+    background-image: url(../../search/images/icon_ttl.png);
+    background-repeat: no-repeat;
+    background-position: center 100px;
+    background-color: #eaeae0;
+}
+#modal h1{display:none}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+#searchConditions{
+    background-color: #eaeae0;
+}
+#modal #searchConditions{
+    padding-top: 50px;
+}
+/*全体ここまで*/
+#sortType{
+    background-color: #eaeae0;
+    /*padding-top: 40px;*/
+    padding-bottom: 20px;
+}
+#sortType h2{display:none;}
+#sortType input[type=radio] + label{
+    background-color: #fff;
+}
+
+/*ボディタイプから探すここから*/
+#bodyType {
+    background-color: #eaeae0;
+    padding-bottom: 10px;
+}
+.modalCnt.modalSearch #bodyType h2{
+    display:none;
+}
+
+#bodyTypeSelection {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.bodyTypeBtn {
+    width: 190px;
+    height: 60px;
+    float: left;
+    margin: 3px;
+    border: 2px solid #00aeff;
+    border-radius: 7px;
+    text-align: center;
+    padding-top: 70px;
+    position: relative;
+    background-color: #fff;
+}
+
+.BtnOff {
+    border: 2px solid #e0e0e0;
+    /*background-color: #e0e0e0;*/
+}
+
+#bodyTypeSelection:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+}
+
+#lightCar:before {
+    content: "";
+    display: inline-block;
+    height: 54px;
+    width: 135px;
+    background-image: url(/pc/search/images/icon_lightCar.png), url(/pc/search/images/icon_check_on.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+div#lightCar.BtnOff:before {
+    content: "";
+    display: inline-block;
+    height: 45px;
+    width: 90px;
+    background-image: url(../../search/images/icon_lightCar_off.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top:15px;
+    left:50px;
+}
+
+#minivan:before {
+    content: "";
+    display: inline-block;
+    height: 54px;
+    width: 135px;
+    background-image: url(/pc/search/images/icon_minivan.png), url(/pc/search/images/icon_check_on.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+div#minivan.BtnOff:before {
+    content: "";
+    display: inline-block;
+    height: 44px;
+    width: 90px;
+    background-image: url(../../search/images/icon_minivan_off.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top:15px;
+    left:50px;
+}
+
+#compact:before {
+    content: "";
+    display: inline-block;
+    height: 54px;
+    width: 135px;
+    background-image: url(/pc/search/images/icon_compact.png), url(/pc/search/images/icon_check_on.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+div#compact.BtnOff:before {
+    content: "";
+    display: inline-block;
+    height: 44px;
+    width: 90px;
+    background-image: url(../../search/images/icon_compact_off.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top:15px;
+    left:50px;
+}
+
+#suv:before {
+    content: "";
+    display: inline-block;
+    height: 54px;
+    width: 135px;
+    background-image: url(/pc/search/images/icon_SUV.png), url(/pc/search/images/icon_check_on.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+div#suv.BtnOff:before {
+    content: "";
+    display: inline-block;
+    height: 44px;
+    width: 90px;
+    background-image: url(../../search/images/icon_SUV_off.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top:15px;
+    left:50px;
+}
+
+#stationWagon:before {
+    content: "";
+    display: inline-block;
+    height: 54px;
+    width: 135px;
+    background-image: url(/pc/search/images/icon_stationWagon.png), url(/pc/search/images/icon_check_on.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+div#stationWagon.BtnOff:before {
+    content: "";
+    display: inline-block;
+    height: 44px;
+    width: 90px;
+    background-image: url(../../search/images/icon_stationWagon_off.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top:15px;
+    left:50px;
+}
+
+#coupe:before {
+    content: "";
+    display: inline-block;
+    height: 54px;
+    width: 135px;
+    background-image: url(/pc/search/images/icon_coupe.png), url(/pc/search/images/icon_check_on.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+div#coupe.BtnOff:before {
+    content: "";
+    display: inline-block;
+    height: 44px;
+    width: 90px;
+    background-image: url(../../search/images/icon_coupe_off.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top:15px;
+    left:50px;
+}
+
+#sedan:before {
+    content: "";
+    display: inline-block;
+    height: 54px;
+    width: 135px;
+    background-image: url(/pc/search/images/icon_sedan.png), url(/pc/search/images/icon_check_on.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+div#sedan.BtnOff:before {
+    content: "";
+    display: inline-block;
+    height: 44px;
+    width: 90px;
+    background-image: url(../../search/images/icon_sedan_off.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top:15px;
+    left:50px;
+}
+
+#other:before {
+    content: "";
+    display: inline-block;
+    height: 54px;
+    width: 135px;
+    background-image: url(/pc/search/images/icon_other.png), url(/pc/search/images/icon_check_on.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+div#other.BtnOff:before {
+    content: "";
+    display: inline-block;
+    height: 48px;
+    width: 90px;
+    background-image: url(../../search/images/icon_other_off.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top:11px;
+    left:50px;
+}
+/*ボディタイプから探すここまで*/
+
+/*プラン*/
+#plan{
+    padding-bottom: 10px;
+    background-color: #eaeae0;
+}
+.modalCnt #plan{padding-bottom: 20px;}
+.modalCnt.modalSearch #plan h2{display:none;}
+#plan input[type=checkbox] + label{
+    background-color: #fff;
+    width: 170px;
+    padding-left: 20px;
+}
+/*色から探す*/
+#bodyColorSelection {
+    width: 800px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.color{
+    margin: 25px 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    float: left;
+    cursor: pointer;
+}
+.color.white{
+    width: 48px;
+    height: 48px;
+    background-color:#FFF;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #999;
+}
+.color.black{
+    background-color:#000;
+}
+.color.silver{
+    background-color:#C0C0C0;
+}
+.color.blue{
+    background-color:#00aeff;
+}
+.color.red{
+    background-color:#F30;
+}
+.color.brown{
+    background-color:#D2691E;
+}
+.color.purple{
+    background-color:#9370DB;
+}
+.color.others{
+    background-image: linear-gradient(-90deg, #FFFF42, #27E7E7);
+}
+
+
+/*色から探すここまで*/
+
+
+/*メーカー・車種から探す*/
+#manufacturer {
+    background-color: #eaeae0;
+}
+.modalCnt.modalSearch #manufacturer h2{display:none;}
+#manufacturerSelection {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#manufacturerSelection:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+}
+
+#manufacturerSelection div {
+    float: left;
+    /*margin-left: 10px;*/
+    margin-left:0;
+    margin-top: 5px;
+}
+#manufacturerSelection > div:first-child {
+    /*margin-left: 120px;*/
+    margin-left:0;
+}
+#manufacturerSelection #modelSelection{
+    margin-left: 15px;
+}
+
+#manufacturerSelection:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 10px;
+}
+
+.manufacturerTitle {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: 45px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.8rem;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+select.disabled {
+    background-color: #e0e0e0;
+}
+
+.selectWrapper {
+}
+
+.selectWrapper:after {
+}
+select:hover {
+    cursor: pointer;
+}
+
+.modalCnt.modalSearch form .first{
+    margin-left: 0;
+}
+
+.selectManufacturer {
+    /*width: 235px;*/
+    width:390px;
+}
+
+.selectCarType {
+    /*width: 320px;*/
+    width:390px;
+}
+
+.allType {
+    clear: both;
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+.allType a {
+    padding:  10px;
+    margin: 10px 0;
+}
+.allType a:before {
+    content: " ";
+    background-size: 25px 25px;
+    background-repeat:no-repeat;
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    left: 13px;
+    z-index: 5;
+}
+.allType.checked a:before {
+    background-size: 25px 25px;
+    background-repeat:no-repeat;
+}
+/*メーカー・車種から探すここまで*/
+
+/*所在地から探す*/
+#locationSelection {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#locationSelection:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 5px;
+}
+
+#locationSelection div {
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#locationSelection > div:first-child {
+    margin-left: 120px;
+}
+
+.areaTitle {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.prefTitle {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.selectArea {
+    width: 235px;
+}
+
+.selectPref {
+    width: 320px;
+}
+
+#locationSelection p.attention, #location p.attention {
+    font-size: 13px;
+    width: 530px;
+    margin: 0 auto;
+}
+
+/*所在地から探すここまで*/
+
+#detailcheckbox{
+    background-color: #eaeae0;
+    padding: 10px 0;
+}
+
+form .searchBtn > * {
+    padding: 12px;
+    width: 80%;
+    margin: 0px auto;
+    line-height: 21px;
+}
+
+#submitButton {
+    width: 100%;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+.searchButtonBox{
+    background-color: #eaeae0;
+}
+.searchBtn {
+    width: 800px;
+    margin: 0 auto;
+}
+.floatButton {
+    position: fixed;
+    bottom: 0px;
+    background-color: rgba(255,255,255,0.7);
+}
+#floatingButtonSpacer {
+    display: none;
+}
+#staticButtonSpacer{
+    height: 30px;
+}
+/*kaizen bug fix*/
+#modal .addCV{display:none;}

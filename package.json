@@ -22,6 +22,7 @@
     "gulp-extname": "^0.2.2",
     "gulp-handlebars": "^5.0.2",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-json-handlebars": "^1.0.6",
     "gulp-livereload": "^4.0.1",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",

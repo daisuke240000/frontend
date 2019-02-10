@@ -1,1 +1,32 @@
-{% body %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<meta name="title" content="{{p.name}}"/>
+<meta name="keywords" content="{{p.keywords}}"/>
+<title>{{p.name}}</title>
+<meta name="description" content="{{p.description}}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{p.name}}" />
+<meta property="og:image" content="{{p.homepage}}/images/og.png" />
+<meta property="og:url" content="{{p.homepage}}" />
+<meta property="og:description" content="{{p.description}}" />
+<!--CSS-->
+<link rel="canonical" href="{{p.homepage}}" />
+<link href="/favicon.ico" rel="shortcut icon" />
+<!--WEBFONT-->
+<link href="//fonts.googleapis.com/css?family=Lato:300normal,400normal&amp;subset=latin,latin-ext" rel="stylesheet" />
+<!--/WEBFONT-->
+<link rel="stylesheet" href="/css/reset.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
+<link rel="stylesheet" href="/css/index.css?{{p.version}}">
+<link rel="stylesheet" href="/css/style.css?{{p.version}}">
+<!--/CSS-->
+<!--JavaScript-->
+<script type="text/javascript" src="/js/common.js"></script>
+<!--/JavaScript-->
+</head>
+  {% body %}
+</html>
