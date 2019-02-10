@@ -47,4 +47,4 @@ gulp.task('assemble',
       }
   )
 );
-//gulp v4.0.0で動く
+//gulp v4.0.0で動いたよ
