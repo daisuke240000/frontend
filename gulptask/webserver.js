@@ -4,11 +4,23 @@ gulp.task('webserver',
   gulp.series(
   // gulp.parallel(
     function(){
-      gulp.src('dist')
+      gulp.src('./dist/')
         .pipe(webserver({
-          host: 'localhost',
+          host: '127.0.0.1',
+          fallback: 'index.html',
           port: 8888,
-          livereload: true
+          livereload: {
+            enable: true,
+            filter: function(fileName) {
+              if (fileName.match(/.map$/)) {
+                return false;
+              } else {
+                return true;
+              }
+            }
+          },
+          directoryListing: true,
+          open: true
         })
       );
     }

@@ -6,7 +6,7 @@ requireDir('./gulptask',{recurse: true});
 gulp.task('default',
   gulp.series(
   //gulp.parallel(
-      'clean','assemble','sass','copy','bump','webserver','watch'
+      'clean','assemble','sass','copy','bump','watch'
   //)
   )
 );
