@@ -34,7 +34,7 @@
     "gulp-sass-lint": "^1.4.0",
     "gulp-server-livereload": "^1.9.2",
     "gulp-webserver": "^0.9.1",
-    "handlebars": "^4.1.0",
+    "handlebars": "^4.7.7",
     "parker": "0.0.10",
     "path": "^0.12.7",
     "prettyjson": "^1.2.1",
